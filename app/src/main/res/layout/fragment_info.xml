@@ -1,0 +1,109 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFE5CA"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp"
+            android:text="Інформація про нас"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:text="Чому ми вирішили створити цю програму?"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="16dp"
+            android:text="Наша програма була створена з метою допомогти туристам, які планують поїздку до Японії, отримати цілісне уявлення про країну, її культуру та найцікавіші пам'ятки. Японія — це країна з унікальною історією та традиціями, і ми хочемо, щоб наші користувачі могли отримати максимум інформації, щоб їхня подорож була комфортною та незабутньою. Ми вирішили зібрати всю необхідну інформацію в одному місці, щоб зробити подорожі ще зручнішими та цікавішими для вас."
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="Info Image 1"
+            android:paddingBottom="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/info01" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Побажання"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="16dp"
+            android:text="Ми сподіваємося, що наша програма стане на допомогу у плануванні вашої подорожі до Японії та дасть змогу насолоджуватися кожним моментом у цій чудовій країні. Бажаємо вам захоплюючих подорожей, відкриттів нових місць та знайомств з цікавими людьми! Нехай ваше перебування в Японії залишить тільки найкращі враження!"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="Info Image 2"
+            android:paddingBottom="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/info02" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Контактні номери"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="16dp"
+            android:text="Для термінових запитів або консультацій ви можете звертатися за наступними номерами:\n\nТелефон (графік роботи: Пн-Пт, 09:00 - 18:00)\n+380 90-1234-5678\n\nТелефон (для міжнародних дзвінків)\n+81 3-1234-5678"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:text="Дякуємо, що обрали нашу програму, і сподіваємося, що вона допоможе Вам у вашій подорожі!"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>
+
+

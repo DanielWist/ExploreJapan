@@ -1,0 +1,79 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFE5CA"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Заголовок -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:text="Головна сторінка"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Текст 1 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:text="Ласкаво просимо до вашого путівника по Японії!"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <!-- Картинка 1 -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/home01" />
+
+        <!-- Текст 2 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:text="Відкрийте для себе країну, де давні традиції зустрічаються із сучасними технологіями. Наш путівник допоможе вам легко спланувати вашу подорож, будь то прогулянки по древніх храмах Кіото, дегустація суші в Токіо або вивчення природної краси Фудзі."
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <!-- Картинка 2 -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/home02" />
+
+        <!-- Текст 3 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:text="Ми пропонуємо:\n\n- Дізнайтеся, як пересуватися, що спробувати і коли краще відвідати різні регіони.\n- Інтерактивна карта: Знайдіть цікаві місця поблизу.\n- Культурний гід: Пориньте в традиції, мову та звичаї Японії.\n- Корисна інформація: Практичні рекомендації, які зроблять вашу подорож комфортною.\n\nПочніть свою пригоду вже сьогодні — натхнення лише в одному кліку!"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <!-- Картинка 3 -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/home03" />
+
+    </LinearLayout>
+</ScrollView>
+

@@ -1,0 +1,2796 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFE5CA"
+    tools:context=".SectionsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:text="Розділи"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSection1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:text="Проживання"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTopic1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C39A7A"
+                android:padding="8dp"
+                android:paddingHorizontal="12dp"
+                android:text="Типи житла"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:id="@+id/section1Content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:id="@+id/subTopic1_1Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic1_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Рьокани"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription1_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Рьокан — це тип японського готелю, виконаного в традиційному стилі, в якому зазвичай є кімнати, покриті татамі, загальні лазні та інші громадські місця, де гості можуть надіти повсякденне літнє кімоно і поговорити з власником"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage1_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/living01"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/subTopic1_2Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic1_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Готелі"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription1_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Від бюджетних бізнес-готелів до розкішних міжнародних мереж — японські готелі відрізняються високим рівнем обслуговування та чистотою. Багато готелів у великих містах мають компактні номери, але оснащені всім необхідним для комфортного перебування."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage1_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/living02"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/subTopic1_3Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic1_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Гостьові будинки"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription1_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Гостьові будинки в Японії пропонують теплу атмосферу та можливість відчути традиційний японський стиль життя. Це бюджетний варіант розміщення, часто з дружнім обслуговуванням, загальними зонами для відпочинку та кухнями для самостійного приготування їжі. Такі заклади популярні серед туристів, які хочуть заощадити та ближче познайомитися з місцевою культурою."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage1_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/living03"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/subTopic1_4Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic1_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Капсульні готелі"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription1_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Капсульні готелі — унікальний вид житла, який вирізняється компактністю та сучасним дизайном. Кожна капсула обладнана необхідними зручностями: ліжком, освітленням, розетками, а іноді навіть телевізором. Вони ідеально підходять для короткотривалого відпочинку, особливо для ділових мандрівників та туристів, які шукають доступне, але функціональне місце для сну."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage1_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/living04"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTopic2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C39A7A"
+                android:padding="8dp"
+                android:paddingHorizontal="12dp"
+                android:text="Поради щодо бронювання"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:id="@+id/section2Content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:id="@+id/subTopic2_1Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic2_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Booking"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription2_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Плануючи проживання в Японії, рекомендується заздалегідь забронювати готелі, особливо якщо ви подорожуєте у високий сезон (наприклад під час цвітіння сакури або свята Золотого тижня). Ось кілька порад, які допоможуть вам:\n\Платформи для бронювання: використовуйте популярні послуги, такі як Booking.com, Agoda або японські сайти, такі як Rakuten Travel. Вони пропонують широкий вибір варіантів від традиційних реканів до сучасних готелів."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage2_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/booking01"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/subTopic2_2Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic2_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Airbnb"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription2_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Airbnb є чудовою альтернативою для тих, хто шукає більш домашню атмосферу або унікальні житлові умови. Ви можете орендувати окрему квартиру, будинок або навіть кімнату в житлі місцевих жителів. Це дозволяє зануритися в культуру країни, спілкуватися з господарями та отримувати локальні рекомендації.\n\Однак врахуйте, що в Японії є строгі правила щодо короткострокової оренди, тому переконайтеся, що ваш варіант житла має ліцензію. Бронюйте заздалегідь, особливо у великих містах або популярних туристичних районах."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage2_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/booking02"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/subTopic2_3Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic2_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Місцеві сервіси"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription2_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Місцеві сервіси для бронювання житла, такі як Rakuten Travel, Jalan.net або Japanican, надають великий вибір традиційного японського житла. Ці сервіси особливо корисні для пошуку автентичних рьоканів, міншюку (сімейних гостьових будинків) чи капсульних готелів. Часто вони пропонують ексклюзивні знижки для туристів.\n\Більшість сервісів доступні англійською мовою, що полегшує бронювання для іноземців. Користуючись цими платформами, ви можете знайти житло, яке не завжди представлено на міжнародних сайтах."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage2_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/booking03"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTopic3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C39A7A"
+                android:padding="8dp"
+                android:paddingHorizontal="12dp"
+                android:text="Середня вартість в містах"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/section3Content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/livingCostContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="У великих містах, таких як Токіо, Осака та Кіото, вартість проживання варіюється від 2,500-5,000 єн за ніч для бюджетних варіантів, таких як хостели або капсульні готелі, до 7,000-15,000 єн для готелів середнього рівня. Для люксових варіантів, ціни починаються від 20,000 єн за ніч."
+                        android:textColor="@android:color/black" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:paddingBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/livingcost01" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="У віддалених містах та невеликих населених пунктах ціни на проживання зазвичай нижчі. Бюджетні варіанти коштують близько 2,000-4,000 єн за ніч, а комфортне розміщення середнього рівня коштуватиме 5,000-10,000 єн."
+                        android:textColor="@android:color/black" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:paddingBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/livingcost02" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="У передмісті великих міст можна знайти житло за середньою вартістю: бюджетне від 2,000 до 4,500 єн, а готелі середнього рівня - від 6,000 до 12,000 єн за ніч. Такі варіанти підійдуть мандрівникам, які хочуть заощадити, залишаючись неподалік головних пам'яток."
+                        android:textColor="@android:color/black" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:paddingBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/livingcost03" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvSection2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text="Транспорт"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTopic4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C39A7A"
+                android:padding="8dp"
+                android:paddingHorizontal="12dp"
+                android:text="Авіаперельоти"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/section4Content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:id="@+id/subTopic4_1Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic4_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Аеропорти Японії"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription4_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Японія має розгалужену мережу аеропортів, що забезпечують міжнародні та внутрішні авіаперельоти. Головні міжнародні ворота країни - аеропорти Наріта і Ханеда в Токіо, а також аеропорти Кансай в Осаці та Тюбу в Нагої. Ці хаби обслуговують рейси з більшості країн світу, забезпечуючи комфортне сполучення та розвинену інфраструктуру, включаючи готелі, ресторани та зручності для пасажирів."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage4_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/avia01"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/subTopic4_2Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic4_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Міжнародні рейси"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription4_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Японія є важливим міжнародним авіаційним вузлом, що з'єднує країну з усіма континентами світу. Аеропорти Наріта, Ханеда, Кансай і Тюбу приймають рейси провідних авіакомпаній, які забезпечують комфортний переліт для мандрівників. Основними напрямками є країни Азії, Північної Америки, Європи та Океанії. Пасажири можуть насолодитися широким вибором послуг, включаючи лаунжі, зони відпочинку та магазини безмитної торгівлі."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage4_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/avia02"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/subTopic4_3Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic4_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Внутрішні перельоти"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription4_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Внутрішні рейси в Японії — це швидкий і зручний спосіб подорожі між островами країни. Відомі авіакомпанії, такі як ANA та JAL, забезпечують часті рейси між великими містами, включаючи Токіо, Саппоро, Осака та Фукуока. Місцеві аеропорти оснащені сучасними зручностями для пасажирів і розташовані поблизу міських центрів, що дозволяє швидко дістатися до пункту призначення."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage4_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/avia03"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTopic5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C39A7A"
+                android:padding="8dp"
+                android:paddingHorizontal="12dp"
+                android:text="Залізничний транспорт"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/section5Content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:id="@+id/subTopic5_1Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic5_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Опис системи Shinkansen"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription5_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Японські швидкісні поїзди (Shinkansen) є найшвидшим і найзручнішим способом подорожей між містами. Максимальна швидкість може сягати 320 км/год, а потяги відомі своєю точністю та комфортом."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage5_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/rail01"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/subTopic5_2Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic5_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Види проїзних (Japan Rail Pass)"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription5_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text=" - Japan Rail Pass: проїзний для іноземних туристів, що дозволяє необмежене користування більшістю поїздів JR, включно зі Shinkansen (крім деяких маршрутів). Ціна — від 33 610 ¥ за 7 днів.\n\- Місцеві проїзні: надаються для окремих регіонів або маршрутів (наприклад, JR West Pass, JR Kyushu Pass)."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage5_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/rail02"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTopic6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C39A7A"
+                android:padding="8dp"
+                android:paddingHorizontal="12dp"
+                android:text="Місцевий транспорт"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/section6Content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:id="@+id/subTopic6_1Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic6_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Метро"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription6_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Метро — один із найзручніших та найефективніших способів пересування великими містами Японії. Системи метро є у Токіо, Осака, Кіото та інших мегаполісах. Особливо вражає токійське метро, яке включає 13 ліній та поєднує основні райони міста з передмістями. Станції метро чітко позначені, а вказівники доступні японською та англійською мовами, що спрощує навігацію для туристів."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage6_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/local01"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/subTopic6_2Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic6_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Автобуси"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription6_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Автобуси є важливим засобом пересування як у великих містах, так і в сільській місцевості Японії. У мегаполісах, таких як Токіо та Кіото, міські автобуси доповнюють мережу метро, забезпечуючи доступ до віддалених районів і популярних туристичних місць. Автобуси обладнані зручностями, такими як електронні табло з маршрутами, а оплата може здійснюватися як готівкою, так і транспортними картами Suica або Pasmo."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage6_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/local02"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/subTopic6_3Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic6_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Таксі"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription6_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Таксі в Японії відомі своєю бездоганною чистотою, професійністю водіїв та високим рівнем обслуговування. Вони доступні в будь-який час доби, особливо у міських центрах і біля станцій метро. Усі машини обладнані лічильниками, а двері автоматично відкриваються для пасажирів. Водії, зазвичай, розуміють основні фрази англійською, що значно полегшує користування послугою для туристів."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage6_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/local03"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTopic7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C39A7A"
+                android:padding="8dp"
+                android:paddingHorizontal="12dp"
+                android:text="Аренда авто"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/section7Content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:id="@+id/subTopic7_1Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic7_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Вимоги до оренди"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription7_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Щоб орендувати автомобіль у Японії, іноземним туристам необхідно мати дійсне міжнародне посвідчення водія (IDP) відповідно до Женевської конвенції 1949 року, а також національне посвідчення водія У деяких випадках, наприклад, для водіїв з Німеччини, Франції або Швейцарії, потрібен нотаріально завірений переклад. національного посвідчення японською мовою. Орендар має бути не молодшим 18 років, а в більшості випадків — 20–21 рік, залежно від компанії."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage7_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/auto01"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/subTopic7_2Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic7_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Правила дорожнього руху"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription7_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="У Японії діє лівосторонній рух, а кермо розташоване з правого боку автомобіля. Дотримання правил дорожнього руху є обов’язковим, а штрафи за порушення доволі високі. Водії мають надавати перевагу пішоходам на пішохідних переходах, а ремені безпеки повинні бути пристебнуті усіма пасажирами. Обмеження швидкості варіюються залежно від типу дороги: у межах міста це зазвичай 40–60 км/год, на шосе — до 100 км/год. Використання мобільного телефону за кермом суворо заборонено, якщо не використовується система 'вільні руки'."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage7_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/auto02"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/subTopic7_3Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic7_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Паркування"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription7_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Паркування в Японії є строго регламентованим, і наявність місця для паркування є важливою умовою для володіння автомобілем. У міських районах більшість стоянок є платними, оснащеними автоматичними системами оплати. Неправильне паркування карається великими штрафами та можливим евакуюванням автомобіля. Для туристів зручно використовувати паркінги біля станцій метро, готелів або спеціальні 'монетні' паркінги, де плата розраховується погодинно."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage7_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/auto03"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvSection3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text="Кухня"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTopic8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C39A7A"
+                android:padding="8dp"
+                android:paddingHorizontal="12dp"
+                android:text="Традиційні страви"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:id="@+id/section8Content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:id="@+id/subTopic8_1Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic8_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Суші"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription8_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Суші - це одна з найвідоміших страв Японії, що поєднує свіжість інгредієнтів, мінімалізм та мистецтво подачі. Основу суші становить рис, приправлений оцтом, який доповнюється рибою, морепродуктами, овочами та іншими компонентами. Існує безліч видів суші: нігірі (кульки рису з скибочкою риби), маки (роли в норі), сашими (тонкі скибочки риби без рису) та інші.\n\Суші можна спробувати як в елітних ресторанах, де кожен шматочок готується майстром, так і в бюджетних закладах, наприклад конвеєрних суші-барах (кайтен-суші). Ця страва не тільки частування, а й частина японської культури, заснованої на повазі до простоти та природності смаків."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage8_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/tradmeal01"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/subTopic8_2Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic8_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Рамен"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription8_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Рамен — це популярна японська страва, яка складається з пшеничної локшини, поданої в ароматному бульйоні. Бульйон може бути різних видів, зокрема соєвий (шою), місо, соляний (шіо) чи на основі свинячих кісток (тонкоцу). До рамена додаються різні інгредієнти: скибочки свинини (чашу), варене яйце, водорості норі, зелена цибуля та бамбукові пагони.\n\Рамен можна скуштувати в численних спеціалізованих закладах по всій Японії, де кожен ресторан має свої унікальні рецепти та методи приготування. Це не просто страва, а цілий ритуал для місцевих жителів і туристів, які люблять експериментувати зі смаками."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage8_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/tradmeal02"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/subTopic8_3Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic8_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Удон"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription8_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Удон — це традиційна японська страва з товстої пшеничної локшини, яка вирізняється своєю пружною текстурою. Удон зазвичай подають у гарячому бульйоні з додаванням соєвого соусу та даші або в холодному вигляді з соусами для занурення. Популярні варіанти включають кіцунє удон (з обсмаженим тофу), темпура удон (з хрусткими шматочками темпури) та набеякі удон (приготований у керамічному горщику).\n\Удон — це універсальна страва, яка смакує як у простих закладах швидкого харчування, так і в ресторанах. Він є невіддільною частиною японської кухні, що символізує тепло та комфорт у будь-яку пору року."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage8_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/tradmeal03"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTopic9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C39A7A"
+                android:padding="8dp"
+                android:paddingHorizontal="12dp"
+                android:text="Вулична їжа"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:id="@+id/section9Content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:id="@+id/subTopic9_1Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic9_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Такоякі"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription9_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Такоякі – це кульки з рідкого тіста з начинкою зі шматочків восьминога, які обсмажуються у спеціальних формах. Ця страва родом із Осаки, де вона стала одним із головних символів місцевої кухні. Готові такояки покривають соусом, схожим на соус для барбекю, майонезом, посипають пластівцями тунця (кацуобуси) та подрібненими водоростями (аонорі).\n\Такоякі можна знайти на вуличних ринках, у спеціалізованих кафе і навіть у супермаркетах. Вони ідеально підходять для перекусу на ходу, пропонуючи поєднання м'якої текстури, насиченого смаку та легкої хрусткої скоринки. Це обов'язковий пункт у гастрономічній подорожі Японією!"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage9_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/streetmeal01"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/subTopic9_2Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic9_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Окономіякі"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription9_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Окономіякі — це японська страва, яку часто називають 'японським омлетом' або 'солоним млинцем'. Вона складається з тіста, змішаного з капустою, яйцями та іншими інгредієнтами, такими як свинина, морепродукти чи сир. Основною особливістю є приготування страви на спеціальній плиті (теппан).\n\Готовий окономіякі покривають соусом, схожим на соус для такоякі, майонезом, аонорі та кацуобусі, що додає страві багатогранного смаку. Цю страву можна знайти в ресторанах, де клієнти самі готують її на вбудованих плитах, а також на фестивалях та вуличних ринках. Окономіякі символізує японську любов до індивідуальності, адже інгредієнти можна підбирати за своїм смаком."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage9_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/streetmeal02"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/subTopic9_3Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic9_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Дайфуку"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription9_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Дайфуку — це традиційний японський десерт, що складається з м'якого рисового тіста (мочі), наповненого солодкою начинкою, найчастіше пастою з червоної квасолі (анко). Варіації включають начинку з фруктів, вершків або навіть шоколаду. Популярний вид — ітіго дайфуку, в якому всередині прихований цілий соковитий полуничний плід.\n\Цей десерт часто зустрічається в кондитерських магазинах, на фестивалях та в чайних домах. Дайфуку — це не лише частування, а й символ добробуту, що робить його обов'язковим доповненням до традиційного японського чаювання чи сувеніром для гостей."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage9_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/streetmeal03"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTopic10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C39A7A"
+                android:padding="8dp"
+                android:paddingHorizontal="12dp"
+                android:text="Поради для туристів"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:id="@+id/section10Content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:id="@+id/subTopic10_1Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic10_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Як замовляти їжу в ресторанах"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription10_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="У японських ресторанах процес замовлення їжі може відрізнятись від звичного. У більшості закладів меню доступно японською та англійською мовами, часто з фотографіями страв, що спрощує вибір. У деяких ресторанах біля входу встановлений автомат для замовлення: ви вибираєте блюдо, оплачуєте, а потім віддаєте чек співробітнику.\n\Якщо офіціант приймає замовлення за столом, достатньо вказати на вибрану страву в меню або вимовити назву. Чемність дуже важлива, тому перед початком розмови використовуйте фразу 'Sumimasen' (вибачте), щоб привернути увагу. У традиційних закладах чайові не приймаються — подяка вже включена у високу якість обслуговування."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage10_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/mealadvice01"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/subTopic10_2Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic10_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Особливості японського етикету"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription10_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Японський етикет базується на принципах поваги, скромності та ввічливості. У спілкуванні важливо використовувати відповідні форми звертання та подяки. Наприклад, слово 'Arigatou' (дякую) є базовим, але для більш ввічливого тону слід сказати 'Arigatou gozaimasu'. Кланяння — ключовий елемент етикету, який виражає подяку, вибачення або привітання. Глибина поклону залежить від ситуації та статусу людини.\n\Під час відвідування традиційних закладів потрібно знімати взуття перед входом і залишати його у спеціальній зоні. У транспорті цінується тиша, а розмови по телефону вважаються неввічливими. Поважаючи ці правила, туристи отримують тепле ставлення та взаємну ввічливість від японців."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage10_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/mealadvice02"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/subTopic10_3Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic10_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Регіони та їх спеціалісти"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription10_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Кожен регіон Японії має унікальні кулінарні традиції та спеціалітети, які відображають місцеву культуру. Наприклад, Хоккайдо славиться морепродуктами, зокрема крабами та ікрою, а також ситним рамном. У регіоні Кансай популярні страви, як-от окономіякі та такоякі, що стали символами Осаки.\n\Кіото, відоме своєю вишуканою культурою, пропонує традиційні кьо-рьорі (кімнатні страви), з акцентом на сезонні інгредієнти. На Кюсю можна скуштувати м’ясо вагю, а в Окінаві — унікальну кухню з тропічним впливом. Подорожуючи регіонами, можна зануритися у гастрономічний світ Японії та відчути багатство її кулінарних традицій."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage10_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/mealadvice03"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvSection4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text="Культура"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTopic11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C39A7A"
+                android:padding="8dp"
+                android:paddingHorizontal="12dp"
+                android:text="Етикет"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:id="@+id/section11Content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:id="@+id/subTopic11_1Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic11_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Поведінка у громадських місцях"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription11_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="У Японії велика увага приділяється ввічливості та повазі до оточуючих, особливо у громадських місцях. Черги формуються організовано, чи то на станції метро, чи то в магазині, чи в кафе — важливо дотримуватися порядку і не намагатися обійти інших.\n\Куріння дозволено лише у спеціально відведених зонах, а викидати сміття потрібно у призначені для цього урни, яких, однак, може бути небагато. Гучний сміх, розмови чи будь-які дії, що створюють незручності іншим, вважаються непристойними. Прості жести поваги, такі як поклони та подяки, допоможуть залишатися в гармонії з японською культурою."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage11_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/etiquette01"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/subTopic11_2Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic11_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Чайові"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription11_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="У Японії чайові вважаються невід’ємною частиною обслуговування, що вже включена у високу якість послуг. У ресторанах, готелях та таксі залишати гроші як подяку не прийнято і навіть може сприйматися як непорозуміння. У разі бажання висловити вдячність, краще зробити це словами або маленьким подарунком, ретельно упакованим — це більше відповідає японському етикету.\n\У висококласних ресторанах деякі клієнти можуть залишати «подяку» в конверті, але це робиться рідко і лише в особливих випадках. Знання цих правил допоможе уникнути незручних ситуацій і показати повагу до місцевих традицій."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage11_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/etiquette02"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/subTopic11_3Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic11_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Правила у транспорті"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription11_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Транспорт у Японії працює за чітким розкладом і вимагає від пасажирів дотримання етикету. У метро та поїздах прийнято зберігати тишу, а пристрої мають бути переведені у безшумний режим. Місця для людей похилого віку, вагітних та осіб з обмеженими можливостями слід звільняти при необхідності, а у години пік поважати особистий простір інших пасажирів.\n\На станціях чітко позначені зони посадки, де формуються організовані черги. Також важливо не стояти у дверях поїзда та виходити одразу, звільняючи прохід. Дотримання цих правил робить транспортну систему ефективною та зручною для всіх."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage11_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/etiquette03"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTopic12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C39A7A"
+                android:padding="8dp"
+                android:paddingHorizontal="12dp"
+                android:text="Традиційні свята"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:id="@+id/section12Content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:id="@+id/subTopic12_1Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic12_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Мацурі"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription12_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Мацурі – це яскраві традиційні свята, які відбуваються у різних куточках Японії протягом усього року. Кожен мацурі пов'язаний із місцевими звичаями, сезонними подіями чи релігійними обрядами. Наприклад, літні фестивалі часто супроводжуються танцями, ходами та феєрверками, такі як Танабата у липні чи Гіон-мацурі у Кіото.\n\Під час мацурі вулиці заповнюються барвистими процесіями, торговими рядами з їжею та сувенірами, а місцеві жителі та туристи одягають традиційний одяг – юкату. Ці свята не лише демонструють багатство японської культури, а й дають унікальну нагоду відчути атмосферу єдності та радості."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage12_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/holiday01"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/subTopic12_2Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic12_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Новий рік"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription12_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Новий рік (Ошьогатсу) — одне з найважливіших свят у Японії, яке символізує новий початок і час для сімейного єднання. Святкування розпочинається 1 січня і триває кілька днів. Традиційно люди прикрашають домівки кадомацу (композиціями з бамбука та сосни) та мотібана (гірляндами з рисових коржиків). Опівночі багато хто відвідує храми, щоб здійснити дзвоніння дзвона 108 разів, очищуючи себе від гріхів року, що минув.\n\Під час свят на столах обов’язково з’являється осечі-рьорі — набір святкових страв у лакованих коробках. Це свято відзначається у спокійній атмосфері, з побажаннями здоров’я, удачі та успіху на весь наступний рік."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage12_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/holiday02"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/subTopic12_3Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic12_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Танабата"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription12_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Танабата — літнє свято закоханих зірок, яке відзначається 7 липня. Воно базується на стародавній легенді про Орихіме та Хікобосі — дві зорі, які зустрічаються лише раз на рік через Молочний Шлях. Святкування супроводжується прикрашанням бамбукових гілок різнокольоровими паперовими смужками (танзаку), на яких люди пишуть свої бажання.\n\Вулиці міст заповнюються барвистими прикрасами та святковими ходами. Танабата має особливу атмосферу, коли традиції поєднуються із сучасними розвагами, створюючи унікальний досвід для місцевих жителів і туристів."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage12_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/holiday03"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTopic13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C39A7A"
+                android:padding="8dp"
+                android:paddingHorizontal="12dp"
+                android:text="Японська поп-культура"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:id="@+id/section13Content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:id="@+id/subTopic13_1Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic13_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Аніме"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription13_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Аніме - це унікальна форма японської анімації, яка завоювала популярність у всьому світі. Це не просто мультфільми, а ціла індустрія, що охоплює різноманітні жанри: від пригод та романтики до наукової фантастики та психологічних драм. Аніме створюється як для дітей, так і для дорослих, включаючи такі культові твори, як Naruto, One Piece, Attack on Titan та роботи Хаяо Міядзакі.\n\Аніме тісно пов'язане з мангою (японськими коміксами), де часто беруться сюжети. Для туристів цікавими будуть відвідування тематичних кафе, магазинів, а також таких подій, як аніме-фестивалі та виставки. Аніме - це не тільки розвага, а й глибокий погляд на японську культуру та світогляд."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage13_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/popculture01"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/subTopic13_2Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic13_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Манга"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription13_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Манга — це японські комікси, що стали важливим елементом культури країни та здобули величезну популярність у всьому світі. Вона охоплює всі можливі жанри та теми: від фантастики та романтики до детективів і спорту. Манга читається справа наліво і часто є основою для створення аніме. Відомі серії, такі як One Piece, Death Note чи Dragon Ball, надихнули мільйони шанувальників.\n\У Японії можна знайти спеціалізовані магазини манги, книжкові кафе та навіть бібліотеки з великою колекцією коміксів. Для фанатів цікавими є виставки, присвячені роботам відомих авторів, а також відвідування районів, як-от Акіхабара в Токіо, де манга є невід’ємною частиною атмосфери."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage13_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/popculture02"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/subTopic13_3Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic13_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Танабата"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription13_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="J-pop — японська поп-музика, що завоювала серця слухачів як у самій країні, так і за її межами. Це динамічний і багатогранний жанр, який включає як легкі романтичні мелодії, так і енергійні танцювальні треки. Відомі виконавці, такі як Utada Hikaru, Arashi чи Perfume, здобули світову популярність.\n\Особливістю J-pop є його тісний зв’язок із культурою ідолів — молодих артистів, які не лише співають, а й виступають на шоу, рекламують продукти та знімаються в серіалах. Для туристів цікавими є концерти, тематичні кафе та можливість відвідати магазини, присвячені J-pop, де можна придбати унікальні сувеніри й записи улюблених артистів."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage13_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/popculture03"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTopic14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C39A7A"
+                android:padding="8dp"
+                android:paddingHorizontal="12dp"
+                android:text="Сувеніри"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:id="@+id/section14Content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:id="@+id/subTopic14_1Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic14_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Що привезти з Японії"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDescription14_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Японія славиться своїми унікальними сувенірами, які можуть стати пам'ятними подарунками або прикрасити вашу оселю. Серед найпопулярніших сувенірів — традиційні речі, такі як порцеляновий посуд, кімоно або юката, а також віяла із витонченими візерунками. Любителі гастрономії можуть привезти японський чай, солодощі вагасі, приправу васабі або соєвий соус високої якості.\n\Для шанувальників поп-культури відмінним вибором будуть фігурки аніме, манга, тематичні товари або аксесуари з японських брендів. Крім того, японська косметика та доглядові засоби також користуються популярністю завдяки високій якості."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage14_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/souvenirs01"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvSection5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text="Видатні пам'ятки"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTopic15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C39A7A"
+                android:padding="8dp"
+                android:paddingHorizontal="12dp"
+                android:text="Саппоро"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:id="@+id/section15Content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:id="@+id/subTopic15_1Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic15_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Парк Одорі"
+                        android:textColor="@android:color/black" />
+
+                    <ImageView
+                        android:id="@+id/tvImage15_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/sapporo01"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvDescription15_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Парк Одорі — це великий міський парк, розташований в центрі Саппоро. Він відомий своїми красивими зеленими зонами, пішохідними доріжками, квітниками та фонтанами. Це популярне місце для відпочинку, пікніків та прогулянок, особливо влітку, коли проходять численні фестивалі. Взимку парк перетворюється на місце для знаменитого фестивалю снігу в Саппоро.
+"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvPrice15_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Ціна: безкоштовно"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvSchedule15_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Графік: цілодобово"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvInterestingFact15_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Цікавий факт"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvInterestingFact_Description15_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Парк Одорі був спочатку спроектований як частина плану розвитку Саппоро після великого землетрусу 1857 року. Назва 'Одорі' в перекладі означає 'велика дорога', і парк був задуманий як центральна артерія міста, що символізує відновлення після катастрофи. Кожного року в парку проводиться фестиваль снігу, що привертає тисячі туристів, де художники створюють величезні скульптури з льоду та снігу."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage15_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/sapporo02"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/subTopic15_2Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic15_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Саппороська телевізійна вежа"
+                        android:textColor="@android:color/black" />
+
+                    <ImageView
+                        android:id="@+id/tvImage15_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/sapporo03"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvDescription15_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Саппороська телевізійна вежа — одна з головних архітектурних пам'яток міста, що є символом Саппоро. Вежа висотою 147,2 метра була побудована у 1957 році і стала однією з перших телевізійних веж в Японії. З верхньої платформи відкривається захоплюючий вид на місто та навколишні гори."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvPrice15_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Ціна: 730 ¥ (для дорослих), 500 ¥ (для дітей)"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvSchedule15_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Графік: щодня з 9:00 до 22:00"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvInterestingFact15_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Цікавий факт"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvInterestingFact_Description15_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Вежа була побудована як частина святкування 100-річчя Саппоро і, хоч і стала символом міста, вона спочатку мала бути тимчасовою конструкцією, яку мали розібрати після завершення будівництва. Однак її архітектурна привабливість і важливість для розвитку телебачення зробили її постійною. Вежа також є одним з найбільш фотографованих місць у Саппоро, і з її оглядових майданчиків відкривається унікальний вид на зимовий фестиваль снігу."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage15_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/sapporo04"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/subTopic15_3Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic15_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Музей пивоварні Саппоро"
+                        android:textColor="@android:color/black" />
+
+                    <ImageView
+                        android:id="@+id/tvImage15_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/sapporo05"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvDescription15_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Музей пивоварні Саппоро — це чудове місце для любителів пива, яке розповідає історію однієї з найбільших пивоварних компаній Японії. Музей знаходиться в будівлі старої пивоварні і пропонує цікаві експонати, що ілюструють процес виробництва пива з моменту заснування компанії в 1876 році. Тут також можна продегустувати різні види пива."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvPrice15_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Ціна: безкоштовно для огляду виставки, дегустація — від 500 ¥"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvSchedule15_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Графік: понеділок — закрито, з вівторка по неділю — з 11:00 до 18:00"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvInterestingFact15_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Цікавий факт"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvInterestingFact_Description15_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Музей пивоварні Саппоро розташований в історичній будівлі, яка раніше була пивоварнею, де вироблялося знамените пиво 'Саппоро'. Унікальність цього пива в тому, що воно стало першим японським пивом, яке було експортовано за кордон і здобуло популярність в Канаді ще в кінці 19 століття. Важливою частиною музею є дегустація пива, де відвідувачі можуть спробувати пиво, виготовлене за традиційними рецептами, що збереглися з того часу."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage15_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/sapporo06"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/subTopic15_4Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic15_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Музей університету Хоккайдо"
+                        android:textColor="@android:color/black" />
+
+                    <ImageView
+                        android:id="@+id/tvImage15_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/sapporo07"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvDescription15_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Музей університету Хоккайдо, заснований у 1971 році, є місцем, де зібрані колекції, пов'язані з природничими науками, історією та культурною спадщиною Хоккайдо. В музеї представлені різноманітні експонати, що охоплюють теми від геології та флори до археології та етнографії."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvPrice15_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Ціна: безкоштовно"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvSchedule15_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Графік: Понеділок — закрито, з вівторка по неділю — з 10:00 до 17:00"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvInterestingFact15_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Цікавий факт"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvInterestingFact_Description15_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="В музеї університету Хоккайдо зберігається унікальна колекція зразків флори та фауни острова Хоккайдо, включаючи види, які можна зустріти лише в цьому регіоні Японії. Однією з найцінніших частин музею є колекція древніх скам'янілостей, що дозволяє вивчати еволюцію життя на острові за останні мільйони років. До того ж, університет був першим в Японії, що започаткував навчання в галузі сільського господарства, і його наукові дослідження мали велике значення для розвитку аграрної науки в країні."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage15_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/sapporo08"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTopic16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C39A7A"
+                android:padding="8dp"
+                android:paddingHorizontal="12dp"
+                android:text="Токіо"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:id="@+id/section16Content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:id="@+id/subTopic16_1Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic16_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Токійський імператорський палац"
+                        android:textColor="@android:color/black" />
+
+                    <ImageView
+                        android:id="@+id/tvImage16_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/tokyo01"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvDescription16_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Токійський імператорський палац є офіційною резиденцією японського імператора та його родини. Палац розташований у самому центрі Токіо, оточений красивими садами та величезним парком. Хоча сам палац закритий для відвідувачів, окремі частини садів відкриті для публіки, і проводяться екскурсії. Архітектура палацу поєднує елементи японського традиційного стилю та сучасні архітектурні рішення."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvPrice16_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Ціна: вхід безкоштовний, екскурсії за додаткову плату"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvSchedule16_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Графік: неділя та понеділок — закрито, з вівторка по суботу — з 09:00 до 11:15 і з 13:30 до 14:45"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvInterestingFact16_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Цікавий факт"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvInterestingFact_Description16_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Імператорський палац побудований на місці колишнього замку Едо, що був головною резиденцією самурайського уряду до 1868 року. Палац постраждав від численних пожеж, але був відновлений після Другої світової війни. Щороку на його території проводяться традиційні заходи, такі як святкування нового року, коли імператор виходить до людей."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage16_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/tokyo02"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/subTopic16_2Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic16_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Сіндзюку Гьоен"
+                        android:textColor="@android:color/black" />
+
+                    <ImageView
+                        android:id="@+id/tvImage16_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/tokyo03"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvDescription16_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Сіндзюку Гьоен — це один із найвідоміших парків Токіо, який об'єднує три основні стилі садів: традиційний японський, французький та англійський. Парк славиться своєю красою у будь-яку пору року, зокрема під час цвітіння сакури навесні або восени, коли листя набуває яскравих червоних та жовтих відтінків. Парк ідеально підходить для прогулянок, пікніків та відпочинку від шуму великого міста."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvPrice16_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Ціна: 500 ¥ для дорослих, 250 ¥ для студентів"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvSchedule16_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Графік: понеділок — закрито, з вівторка по неділю — з 09:00 до 16:00."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvInterestingFact16_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Цікавий факт"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvInterestingFact_Description16_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Парк був створений в 1906 році як ботанічний сад для досліджень, а пізніше став популярним місцем для відпочинку. Під час Другої світової війни парк був сильно пошкоджений, але після реставрації у 1950-х роках став одним із символів миру та відродження."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage16_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/tokyo04"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/subTopic16_3Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic16_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Монастир Сенсо"
+                        android:textColor="@android:color/black" />
+
+                    <ImageView
+                        android:id="@+id/tvImage16_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/tokyo05"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvDescription16_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Сенсо-джі — це найстаріший і найбільш відомий буддистський храм Токіо, розташований в районі Асакуса. Храм був побудований у 628 році і є важливим місцем для паломників і туристів. Величезний храмовий комплекс включає браму Камінарі-мон, яка є символом Асакуси, і велику статую Каннон, богині милосердя. Храм відомий своїми святами та релігійними обрядами."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvPrice16_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Ціна: безкоштовно"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvSchedule16_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Графік: щоденно з 06:00 до 17:00"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvInterestingFact16_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Цікавий факт"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvInterestingFact_Description16_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Легенда свідчить, що статую Каннон знайшли рибалки, які випадково виловили її в річці, і навіть після численних спроб викинути статую на поверхню, вона продовжувала з'являтися в річці знову. Це дало початок будівництву храму на цьому місці."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage16_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/tokyo06"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/subTopic16_4Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic16_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Токійська вежа"
+                        android:textColor="@android:color/black" />
+
+                    <ImageView
+                        android:id="@+id/tvImage16_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/tokyo07"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvDescription16_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Токійська вежа, побудована в 1958 році, є однією з найбільш впізнаваних архітектурних споруд в Японії. Вона нагадує Ейфелеву вежу в Парижі, але є вищою на 13 метрів. Вежа використовується для телевізійних і радіопередач, а також має оглядові майданчики з неймовірними видами на Токіо та Олімпійський стадіон."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvPrice16_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Ціна: 900 ¥ для дорослих, 500 ¥ для дітей (оглядові майданчики)"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvSchedule16_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Графік: щоденно з 09:00 до 23:00"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvInterestingFact16_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Цікавий факт"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvInterestingFact_Description16_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Токійська вежа була побудована через потребу в оновлених телевізійних антенах після війни, коли зростала популярність телевізійних передач. Вежа також слугує важливим символом економічного відродження Японії після Другої світової війни."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage16_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/tokyo08"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTopic17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C39A7A"
+                android:padding="8dp"
+                android:paddingHorizontal="12dp"
+                android:text="Осака"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:id="@+id/section17Content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:id="@+id/subTopic17_1Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic17_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Замок Осака"
+                        android:textColor="@android:color/black" />
+
+                    <ImageView
+                        android:id="@+id/tvImage17_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="17dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/osaka01"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvDescription17_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Замок Осака — це одна з найвідоміших і найвеличніших історичних пам'яток Японії, що розташована в центрі міста. Замок був побудований у 1583 році воєначальником Тойотомі Хідейоші. Його величезні стіни та вежі з дзеркальними покрівлями свідчать про його важливість у японській історії. Замок пережив багато воєн і реконструкцій, а нині є популярним туристичним об'єктом з музеєм, що розповідає про історію Японії і самого замку."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvPrice17_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Ціна: 600 ¥ для дорослих, 200 ¥ для дітей"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvSchedule17_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Графік: щоденно з 09:00 до 17:00"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvInterestingFact17_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Цікавий факт"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvInterestingFact_Description17_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Замок Осака зіграв важливу роль у японській історії, адже саме тут відбулася одна з найбільших битв — Битва при Осаці, яка стала вирішальною для падіння клану Тойотомі і встановлення влади сьоґунату Токуґава."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage17_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="17dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/osaka02"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/subTopic17_2Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic17_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Район Дотонборі"
+                        android:textColor="@android:color/black" />
+
+                    <ImageView
+                        android:id="@+id/tvImage17_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="17dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/osaka03"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvDescription17_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Дотонборі — це колоритний район Осаки, який славиться своїми неоновими вивісками, ресторанами і магазинами. Тут можна знайти безліч кафе, що пропонують традиційну осакську їжу, зокрема, такоякі (паляниця з восьминогом) та окономіякі (японська піца). Дотонборі є не тільки гастрономічним центром, а й культурним, адже тут проводяться різноманітні фестивалі та вистави."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvPrice17_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Ціна: безкоштовно"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvSchedule17_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Графік: цілодобово"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvInterestingFact17_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Цікавий факт"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvInterestingFact_Description17_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Дотонборі в Осаці відомий своїми яскравими неоновими вивісками, але однією з найвпізнаваніших є реклама фірми Glico, на якій зображений бігун, що перемагає у марафоні. Ця вивіска вперше була встановлена ще у 1935 році і з тих пір стала символом району. Щороку тисячі туристів фотографуються, імітуючи позу бігуна, роблячи цей знак одним із найбільш популярних місць для селфі в Японії."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage17_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="17dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/osaka04"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/subTopic17_3Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic17_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Осакський акваріум Каюкан"
+                        android:textColor="@android:color/black" />
+
+                    <ImageView
+                        android:id="@+id/tvImage17_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="17dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/osaka05"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvDescription17_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Осакський акваріум Каюкан є одним з найбільших акваріумів у світі. Він розташований в районі Умеда і має понад 15 тисяч морських істот, які мешкають у 15 великих акваріумах, що імітують різні екосистеми світу. Головна атракція — це великий акваріум, в якому плаває китова акула, один із найбільших видів риб у світі."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvPrice17_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Ціна: 2300 ¥ для дорослих, 600 ¥ для дітей"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvSchedule17_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Графік: субота та неділя — з 09:30 до 20:00, з понеділка по п'ятницю — з 10:30 до 20:00"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvInterestingFact17_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Цікавий факт"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvInterestingFact_Description17_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Акваріум Каюкан був одним із перших у світі, де було успішно відтворено китову акулу в неволі, що стало великим досягненням для морської біології."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage17_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="17dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/osaka06"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/subTopic17_4Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subTopic17_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#C39A7A"
+                        android:padding="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Монастир Тенмангу"
+                        android:textColor="@android:color/black" />
+
+                    <ImageView
+                        android:id="@+id/tvImage17_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="17dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/osaka07"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvDescription17_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Монастир Тенмангу є важливим храмом для японців, присвяченим богу літератури та навчання, Тенман-но-Міко. Храм був заснований у 949 році і є місцем поклоніння для студентів, які моляться за успіхи в навчанні. Крім того, на території храму росте знаменитий сад з квітучими сливами, що робить його популярним місцем для відвідувань під час цвітіння слив."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvPrice17_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Ціна: безкоштовно"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvSchedule17_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Графік: щоденно з 05:30 до 18:30"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvInterestingFact17_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Цікавий факт"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvInterestingFact_Description17_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Монастир Тенмангу відомий своїм фестивалем, що проходить у липні. Це одне з найбільших свят в Осаці, яке приваблює тисячі людей, особливо студентів, які сподіваються на удачу в навчанні."
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tvImage17_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="17dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/osaka08"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+
+
+
+
+
+

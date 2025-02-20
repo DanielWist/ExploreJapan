@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFE5CA"
+    tools:context=".TipsFragment">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:text="Корисні поради"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTopic1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C39A7A"
+                android:padding="8dp"
+                android:paddingHorizontal="12dp"
+                android:text="Поважайте правила фото"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvContent1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EFE5CA"
+                android:padding="12dp"
+                android:text="Не скрізь можна фотографувати. Наприклад, у деяких храмах, музеях чи приватних заходах це заборонено. Завжди звертайте увагу на знаки та, при сумніві, запитуйте дозволи."
+                android:textColor="@android:color/black"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvTopic2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C39A7A"
+                android:padding="8dp"
+                android:paddingHorizontal="12dp"
+                android:text="Не залишайте сміття"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvContent2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EFE5CA"
+                android:padding="12dp"
+                android:text="В Японії на вулицях практично немає сміттєвих контейнерів, тому сміття прийнято забирати з собою. У місцях для пікніків або в парках часто є зони для сортування відходів."
+                android:textColor="@android:color/black"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvTopic3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C39A7A"
+                android:padding="8dp"
+                android:paddingHorizontal="12dp"
+                android:text="Будьте пунктуальні"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvContent3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EFE5CA"
+                android:padding="12dp"
+                android:text="В Японії пунктуальність – це не просто норма, а ознака поваги. Запізнення навіть на кілька хвилин може бути сприйняте як неввічливість, особливо у професійному чи офіційному середовищі. Серед громадського транспорту потяги та автобуси слідують строгому розкладу, тому намагайтеся планувати свої переміщення заздалегідь."
+                android:textColor="@android:color/black"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvTopic4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C39A7A"
+                android:padding="8dp"
+                android:paddingHorizontal="12dp"
+                android:text="Вивчіть основи японського етикету"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvContent4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EFE5CA"
+                android:padding="12dp"
+                android:text="В Японії важливі жести поваги: уклін при вітанні, використання двох рук при передачі предметів, таких як візитні картки, та дотримання правил пристойності у громадських місцях. Не шуміть у транспорті та не розмовляйте голосно по телефону."
+                android:textColor="@android:color/black"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvTopic5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C39A7A"
+                android:padding="8dp"
+                android:paddingHorizontal="12dp"
+                android:text="Знімайте взуття під час входу"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvContent5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EFE5CA"
+                android:padding="12dp"
+                android:text="В японських будинках, храмах та традиційних реканах (готелях) прийнято знімати взуття при вході. Зазвичай біля входу знаходяться спеціальні капці для гостей."
+                android:textColor="@android:color/black"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvTopic6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C39A7A"
+                android:padding="8dp"
+                android:paddingHorizontal="12dp"
+                android:text="Використовуйте готівку"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvContent6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EFE5CA"
+                android:padding="12dp"
+                android:text="Незважаючи на технологічну розвиненість країни, в Японії багато місць досі воліють готівку. У банках або поштових відділеннях завжди можна зняти ієни, а в магазинах типу 7-Eleven часто є зручні банкомати."
+                android:textColor="@android:color/black"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
